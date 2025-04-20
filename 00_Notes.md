@@ -29,7 +29,6 @@ app.get('/', (req, res) => {
 
 ```
 
-
 ## Sub Topic
 Content
 

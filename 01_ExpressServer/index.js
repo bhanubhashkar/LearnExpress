@@ -11,3 +11,6 @@ app.get('/', (req, res) => {
   res.send('Hello World! Express is behind this message.')
 })
 
+app.get('/home', (req, res) => {
+    res.send('This is home.')
+})
