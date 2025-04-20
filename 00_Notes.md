@@ -27,6 +27,16 @@ app.get('/', (req, res) => {
   res.send('Hello from Express!')
 })
 
+app.get("/contact", (req,res)=>{
+    console.log(req.rawHeaders);
+    res.send("Hello there...! This is contact us page.")
+})
+
+app.get("/about", (req,res)=>{
+    console.log(req.rawHeaders);
+    res.send("Hello there...! This is about us page.")
+})
+
 ```
 
 ## Sub Topic
