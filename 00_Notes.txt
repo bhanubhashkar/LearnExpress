@@ -7,7 +7,8 @@
 /*
 
 */
-
+to view all running process on mac
+//sudo lsof -i -P -n | grep LISTEN
 
 
 
