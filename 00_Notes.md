@@ -176,9 +176,14 @@ app.listen(port, () => {
 
 ```
 
-### Create HTTP Request
+### EJS Tags
 ```js
-
+<%= variable %>     :   JS Output
+<% JS Code %>       :   JS Execute
+<%- HTML Code %>    :   Render HTML
+<%%  %%>            :   Render <% or %>
+<%# Comment %>      :   Comment, will not be executed
+<%- include("page.ejs") %>    :   Inser another EJS file 
 ```
 
 ### Create HTTP Request
