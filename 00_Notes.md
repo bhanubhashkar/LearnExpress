@@ -151,6 +151,36 @@ app.listen(port, () => {
 
 ```
 
+### Parse Dynamic value while rendering a page 
+```js
+// below in ejs file
+<h1>Hey, It'a <%= day %>, time to <%= advice %>. </h1>
+
+// install ejs and express
+import express from "express";
+const app = express();
+const port = 3000;
+
+
+app.get("/",(req,res)=>{
+    //res.send("Hi")
+    res.render("index.ejs", {
+        day : 'weekday',
+        advice : 'work hard',
+    })
+});
+
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}`)
+});
+
+```
+
+### Create HTTP Request
+```js
+
+```
+
 ### Create HTTP Request
 ```js
 
@@ -160,7 +190,6 @@ app.listen(port, () => {
 ```js
 
 ```
-
 
 
 
